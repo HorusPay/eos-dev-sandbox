@@ -2,7 +2,10 @@
 ## @author sschechter
 
 Utility scripts and examples for working with the EOS Blockchain
-Feel free to borrow, modify and build on these ideas
+Feel free to borrow, modify and build on these ideas.
+When creating a default wallet, the password is stored in a plain text file called password.txt
+This is obviously not secure and is meant for ease of development. \
+You probably shouldn't run these while connected to the main net
 
 # Append the following lines to '~/.bashrc' and these aliased functions become available for use:
 > export EOSIO_WS_HOME="<MY_DIRECTORY>"
@@ -21,6 +24,7 @@ eds-create_wallet: creates a default wallet and saves the password to a plaintex
 eds-deploy_contract [Account Name] [Contract Name]: from within the directory, deploys a contract onto a running Nodeos
 eds-help: display the contents of this file which lists these functions and where to locate them
 eds-print: prints the current state of the blockchain
+eds-wallet_unlock: unlocks your wallet with password stored in password.txt
 
 # Examples
 eds-example-airdrop_lotto [Name] [Symbol] [Ttotalcoins]: Create a coin and airdrop random tokens on users 
