@@ -7,9 +7,9 @@ OUPUT=$(cleos wallet create)
 KEYS=($OUPUT)
 WALLET_PASSWORD=$(echo ${KEYS[22]}| cut -d'"' -f 2)
 
-echo "Wallet created - Exporting pw to ${EOSIO_SCRIPT_HOME}/password.txt for your convenience:"
+echo "Wallet created - Exporting pw to ${EOSIO_SCRIPT_HOME}/utils/password.txt for your convenience:"
 echo "PW: ${WALLET_PASSWORD}"
-echo ${WALLET_PASSWORD} > ${EOSIO_SCRIPT_HOME}/password.txt
+echo ${WALLET_PASSWORD} > ${EOSIO_SCRIPT_HOME}/utils/password.txt
 
 echo "Import Owner and Active Keys"
 cleos wallet import ${OWNER_PRIVATE_KEY}

@@ -1,6 +1,7 @@
 #!/bin/bash
 ### create_account.sh
-### Create a user account (under master name for now) and assign it keys
+### Create a user account under the master name, bypassing resource requirements
+### Use account.sh to create new accounts through the system contract (cleos system newaccount)
 source "${EOSIO_SCRIPT_HOME}/properties.sh"
 
 if [ "${#}" -ne 1 ];
@@ -29,6 +30,3 @@ cleos create account ${EOSIO} ${1} ${OWNER_KEY} ${ACTIVE_KEY}
 #echo "Import Owner and Active Keys under our main ${EOSIO} account"
 cleos wallet import ${OWNER_PRIV_KEY}
 cleos wallet import ${ACTIVE_PRIV_KEY}
-
-#cleos create account eosio dudcoin EOS6b9UtGzEW2cyhME2gMBMh9dbDf8jtDTxpQRdF1mxRoNiyJ5iKK EOS5vkjirAoaNNXVYLZg2QneQk6eeT3ExhGiGhnWtLLMyeTgUXt9G
-#cleos create account eosio kirk EOS883B2uLELM5uSmVmdDPd7VKehj9Wp6Yjf48RCWP5KHAvFLCyQa EOS5NKBdbFrCa92cTX9EQHQbhYSESjmpd19rT18YN8BSsGoALVncz
