@@ -1,10 +1,10 @@
 #EOS Workspace Properties
-USER="scott"
-EOS_HOME="/home/${USER}/eos"
+USER="jackdisalvatore"
+EOS_HOME="/Volumes/JackDiSalvatoreSSDT5/JacksFiles/eos-v1.0/eos"
 CONTRACT_OWNER="horustokenio"
 CONTRACT_ACCOUNT="horuspaydemo"
 HP_MULTI="horuspaymsig"
-PROJECT_CONTRACT_HOME="/home/${USER}/HorusPay/eos-dev-sandbox/contracts/hpdemo"
+PROJECT_CONTRACT_HOME="/Volumes/JackDiSalvatoreSSDT5/JacksFiles/eos-dev-sandbox/contracts/hpdemo"
 
 CONTRACT='hpdemo'
 
@@ -15,18 +15,18 @@ TOKEN_OWNERS=(eosio.token eosio.token eosatidiumio gyztomjugage eosiochaince cha
 TOKENS=(SYS EOS ATD CETOS CET CHL ADD EDNA EOSDAC EOX HORUS KARMA)
 
 #Wallet Info
-WALLET_SRC=/home/${USER}/eosio-wallet
-DATA_SRC="/home/${USER}/.local/share/eosio/nodeos/data"
+WALLET_SRC=/Users/$USER/eosio-wallet
+DATA_SRC=~/Library/Application\ Support/eosio/nodeos/data/
 #Read wallet password from convenient super-unsafe plain-text file
 #Stored locally in plain text for dev convenience
-WALLET_PASSWORD=$(<${EOSIO_SCRIPT_HOME}/utils/password.txt)
+WALLET_PASSWORD=$(<$EOSIO_SCRIPT_HOME/utils/password.txt)
 
-OWNER_PUBLIC_KEY="EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV"
-OWNER_PRIVATE_KEY="5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"
-ACTIVE_PUBLIC_KEY="EOS5iBKH8KxAU4BLomJseyhWVvwmTiU4a98xKVwLciPZosHgJ66Z5"
-ACTIVE_PRIVATE_KEY="5JhkMn1vP6omtS4nwzWvZX9a6rjuXmpDY7kiMiXSbHW2XRowG5D"
+OWNER_PUBLIC_KEY=EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+OWNER_PRIVATE_KEY=5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+ACTIVE_PUBLIC_KEY=EOS5iBKH8KxAU4BLomJseyhWVvwmTiU4a98xKVwLciPZosHgJ66Z5
+ACTIVE_PRIVATE_KEY=5JhkMn1vP6omtS4nwzWvZX9a6rjuXmpDY7kiMiXSbHW2XRowG5D
 
-LOGFILE="/media/sf_eosio_shared/log"
+LOGFILE="/Volumes/JackDiSalvatoreSSDT5/JacksFiles/eos-v1.0/log"
 
 #Token & Account Info
 EOS_TEST_USERS=(scott joe jack jarib jesse gunnar)

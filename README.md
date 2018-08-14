@@ -4,12 +4,12 @@
 Utility scripts and examples for working with the EOS Blockchain
 Feel free to borrow, modify and build on these ideas.
 When creating a default wallet, the password is stored in a plain text file called password.txt
-This is obviously not secure and is meant for ease of development. 
+This is obviously not secure and is meant for ease of development.
 You probably shouldn't run these while connected to the main net
 
-## Append the following lines to '~/.bashrc' and these aliased functions become available for use:
-> export EOSIO_SCRIPT_HOME="<workspace_home>/eos-dev-sandbox/scripts" \
-> source ${EOSIO_SCRIPT_HOME}/ops/set_environment.sh
+## Append the following lines to '~/.bash_profile' and these aliased functions become available for use:
+> export EOSIO_SCRIPT_HOME=/path-to-foler/eos-dev-sandbox/scripts
+> source $EOSIO_SCRIPT_HOME/ops/set_environment.sh
 
 ## For builds with eosio v1.1.x, you have to set the $PATH variables manually using Ubuntu 18.04. Add these varables to your ~/.bashrc file.
 ```
@@ -17,7 +17,7 @@ export PATH=$PATH:/usr/local/eosio/bin
 ```
 
 
-# Please refer to ${EOSIO_SCRIPT_HOME}/ops/set_environment.sh for supported aliases
+# Please refer to $EOSIO_SCRIPT_HOME/ops/set_environment.sh for supported aliases
 
 After you've set you're aliases, source a new terminal and run
 
@@ -36,7 +36,7 @@ load_system_contract.sh: load the system contract (use boot instead)
 account.sh [Account Name]: Creates an account by calling 'cleos system newaccount'
 accounts.sh [Account Name]: Create accoutns in batches
 create_account.sh [Account Name]: Creates an account with new generated owner & active keys under master
-create_token.sh [Account Name]: Creates a custom Extended Asset and issues all tokens to its owner 
+create_token.sh [Account Name]: Creates a custom Extended Asset and issues all tokens to its owner
 create_wallet.sh: creates a default wallet and saves the password to a plaintext file (** Not secure)
 init_tokens.sh: creates an array of tokens and issues them to an array of users
 help.sh: display the contents of this file which lists these functions and where to locate them
@@ -46,7 +46,7 @@ wallet_unlock.sh: unlocks your wallet with password stored in password.txt
 # Msig - Multi-sig examples (TODO: needs work)
 
 # Examples
-example-airdrop_lotto.sh [Name] [Symbol] [Ttotalcoins]: Create a coin and airdrop random tokens on users 
+example-airdrop_lotto.sh [Name] [Symbol] [Ttotalcoins]: Create a coin and airdrop random tokens on users
 example-launchchain.sh: Boots chain, runs a few lottos, and prints the results
 
 

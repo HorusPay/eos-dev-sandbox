@@ -1,17 +1,17 @@
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source $EOSIO_SCRIPT_HOME/properties.sh
 
 if [ "$1" = "-c" ] || [ "$1" = "-b" ]; then
 	if [ "$1" = "-b" ]; then
 		# boot a fresh chain
-		bash ${EOSIO_SCRIPT_HOME}/ops/boot.sh
+		bash $EOSIO_SCRIPT_HOME/ops/boot.sh
 	fi
 	###########################################
 	#Compile, set contract & init
 	###########################################
 	echo 'Set contract '$CONTRACT' to '$CONTRACT_ACCOUNT' account'
     cd ${PROJECT_CONTRACT_HOME}
-	eosiocpp -o ${CONTRACT}.wast ${CONTRACT}.cpp && 
-	eosiocpp -g ${CONTRACT}.abi ${CONTRACT}.cpp && 
+	eosiocpp -o ${CONTRACT}.wast ${CONTRACT}.cpp &&
+	eosiocpp -g ${CONTRACT}.abi ${CONTRACT}.cpp &&
 	cleos set contract ${CONTRACT_ACCOUNT} ../${CONTRACT} -p ${CONTRACT_ACCOUNT}
 
 	###########################################
@@ -31,7 +31,7 @@ if [ "$1" = "-c" ] || [ "$1" = "-b" ]; then
 	# Query your contracts table stored in EOS RAM
 	#cleos get table ${CONTRACT_ACCOUNT} ${CONTRACT_ACCOUNT} #name
 
-# End compile, set contract, init 
+# End compile, set contract, init
 fi
 ###########################################
 #### Test your contract actions here

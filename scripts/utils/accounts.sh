@@ -10,7 +10,7 @@ create(){
 	        #EOS5AwwyqQTsrMTkBbGxkbJz9vMugi7d3zHBRiGvbWv1eU4dGYc4v (active)
 }
 
-for name in "${ACCOUNTS[@]}"
+for name in "$ACCOUNTS[@]"
 do
     create $name
 done
