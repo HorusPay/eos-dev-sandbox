@@ -11,6 +11,12 @@ You probably shouldn't run these while connected to the main net
 > export EOSIO_SCRIPT_HOME="<workspace_home>/eos-dev-sandbox/scripts" \
 > source ${EOSIO_SCRIPT_HOME}/ops/set_environment.sh
 
+# For builds with eosio v1.1.x, you have to set the $PATH variables manually using Ubuntu 18.04. Add these varables to your ~/.bashrc file.
+```
+export PATH=$PATH:/usr/local/eosio/bin
+```
+
+
 # Please refer to ${EOSIO_SCRIPT_HOME}/ops/set_environment.sh for supported aliases
 
 After you've set you're aliases, source a new terminal and run
