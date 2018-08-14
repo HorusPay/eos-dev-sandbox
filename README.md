@@ -7,11 +7,11 @@ When creating a default wallet, the password is stored in a plain text file call
 This is obviously not secure and is meant for ease of development. 
 You probably shouldn't run these while connected to the main net
 
-# Append the following lines to '~/.bashrc' and these aliased functions become available for use:
+## Append the following lines to '~/.bashrc' and these aliased functions become available for use:
 > export EOSIO_SCRIPT_HOME="<workspace_home>/eos-dev-sandbox/scripts" \
 > source ${EOSIO_SCRIPT_HOME}/ops/set_environment.sh
 
-# For builds with eosio v1.1.x, you have to set the $PATH variables manually using Ubuntu 18.04. Add these varables to your ~/.bashrc file.
+## For builds with eosio v1.1.x, you have to set the $PATH variables manually using Ubuntu 18.04. Add these varables to your ~/.bashrc file.
 ```
 export PATH=$PATH:/usr/local/eosio/bin
 ```
