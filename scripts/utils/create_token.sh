@@ -4,7 +4,7 @@ if [ "$#" -ne 3 ]; then
     echo "Usage: create_token.sh <ISSUER_ACCOUNT_NAME> <ISSUER_PUBLIC_KEY> <SYMBOL>"
     exit 1
 fi
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source ${HORUS_SCRIPT_HOME}/properties.sh
 
 ISSUER=$1
 PUBLIC_KEY=$2

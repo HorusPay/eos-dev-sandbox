@@ -1,7 +1,7 @@
 #!/bin/bash
 ### eosioprint.sh
 ### Iterates through the blockchain and prints out useful info
-source "${EOSIO_SCRIPT_HOME}/properties.sh"
+source "${HORUS_SCRIPT_HOME}/properties.sh"
 
 # Print currency balances for each user
 numTokens=${#TOKENS[@]}

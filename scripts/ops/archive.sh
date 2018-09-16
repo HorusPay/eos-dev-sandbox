@@ -1,6 +1,6 @@
 #!/bin/bash
 ### eosioarchive - Backup and delete EOS wallets & blockchain (adds latency)
-source "${EOSIO_SCRIPT_HOME}/properties.sh"
+source "${HORUS_SCRIPT_HOME}/properties.sh"
 
 TIMESTAMP="$(date +%Y-%m-%d_%Hh%Mm%Ss)"
 BACKUP_WALLET_SRC=/home/scott/eosio-wallet

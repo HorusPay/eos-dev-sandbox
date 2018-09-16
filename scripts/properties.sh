@@ -1,10 +1,10 @@
 #EOS Workspace Properties
 USER="scott"
-EOS_HOME="/home/${USER}/eos"
+EOS_HOME="/Users/${USER}/eos"
 CONTRACT_OWNER="horustokenio"
 CONTRACT_ACCOUNT="horuspaydemo"
 HP_MULTI="horuspaymsig"
-PROJECT_CONTRACT_HOME="/home/${USER}/HorusPay/eos-dev-sandbox/contracts/hpdemo"
+PROJECT_CONTRACT_HOME="/Users/${USER}/HorusPay/eos-dev-sandbox/contracts/hpdemo"
 
 CONTRACT='hpdemo'
 
@@ -15,8 +15,8 @@ TOKEN_OWNERS=(eosio.token eosio.token eosatidiumio gyztomjugage eosiochaince cha
 TOKENS=(SYS EOS ATD CETOS CET CHL ADD EDNA EOSDAC EOX HORUS KARMA)
 
 #Wallet Info
-WALLET_SRC=/home/${USER}/eosio-wallet
-DATA_SRC="/home/${USER}/.local/share/eosio/nodeos/data"
+WALLET_SRC=/Users/${USER}/eosio-wallet
+DATA_SRC="/Users/${USER}/.local/share/eosio/nodeos/data"
 #Read wallet password from convenient super-unsafe plain-text file
 #Stored locally in plain text for dev convenience
 WALLET_PASSWORD=$(<${EOSIO_SCRIPT_HOME}/utils/password.txt)

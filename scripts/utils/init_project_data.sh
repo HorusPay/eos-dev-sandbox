@@ -1,6 +1,6 @@
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source ${HORUS_SCRIPT_HOME}/properties.sh
 
-bash ${EOSIO_SCRIPT_HOME}/utils/account.sh ${CONTRACT_OWNER} ${OWNER_PUBLIC_KEY}
+bash ${HORUS_SCRIPT_HOME}/utils/account.sh ${CONTRACT_OWNER} ${OWNER_PUBLIC_KEY}
 echo 'issue tokens to ' ${CONTRACT_OWNER}
 
 # TODO fix hard coding

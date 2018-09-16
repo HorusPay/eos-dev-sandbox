@@ -1,9 +1,9 @@
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source ${HORUS_SCRIPT_HOME}/properties.sh
 
 # Create trading partners
-bash ${EOSIO_SCRIPT_HOME}/utils/account.sh horustester1 ${OWNER_PUBLIC_KEY}
-bash ${EOSIO_SCRIPT_HOME}/utils/account.sh horustester2 ${OWNER_PUBLIC_KEY}
-bash ${EOSIO_SCRIPT_HOME}/utils/account.sh horustester3 ${OWNER_PUBLIC_KEY}
+bash ${HORUS_SCRIPT_HOME}/utils/account.sh horustester1 ${OWNER_PUBLIC_KEY}
+bash ${HORUS_SCRIPT_HOME}/utils/account.sh horustester2 ${OWNER_PUBLIC_KEY}
+bash ${HORUS_SCRIPT_HOME}/utils/account.sh horustester3 ${OWNER_PUBLIC_KEY}
 
 # cleos push action eosio.token create '[ "eosio", "1000000000.0000 SYS"]' -p eosio.token
 # cleos push action eosio.token issue '[ "eosio", "1000000000.0000 SYS", "init" ]' -p ${EOSIO}

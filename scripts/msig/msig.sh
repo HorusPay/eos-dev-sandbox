@@ -1,4 +1,4 @@
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source ${HORUS_SCRIPT_HOME}/properties.sh
 # horustokenio horuspaydemo horuspaymsig  partner11111 partner22222 partner33333
 P_NAME=customgroup
 

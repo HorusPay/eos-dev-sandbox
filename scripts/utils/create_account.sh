@@ -2,7 +2,7 @@
 ### create_account.sh
 ### Create a user account under the master name, bypassing resource requirements
 ### Use account.sh to create new accounts through the system contract (cleos system newaccount)
-source "${EOSIO_SCRIPT_HOME}/properties.sh"
+source "${HORUS_SCRIPT_HOME}/properties.sh"
 
 if [ "${#}" -ne 1 ];
 then

@@ -1,7 +1,7 @@
 #!/bin/bash
 ### ico - Distribute coins randomly to new accounts
 ### Create a default wallet, load eosio.bios & eosio.token contracts
-source "${EOSIO_SCRIPT_HOME}/properties.sh"
+source "${HORUS_SCRIPT_HOME}/properties.sh"
 
 if [ $# != 3 ] 
 then

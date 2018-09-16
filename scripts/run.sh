@@ -1,4 +1,4 @@
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source ${HORUS_SCRIPT_HOME}/properties.sh
 
 if [ "$1" = "-c" ] || [ "$1" = "-b" ]; then
 	if [ "$1" = "-b" ]; then

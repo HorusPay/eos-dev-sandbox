@@ -4,7 +4,7 @@
 
 # Creates and deploys the eosio.system contract and associated accounts 
 # Uses the standard EOSIO public key to initialize.
-source ${EOSIO_SCRIPT_HOME}/properties.sh
+source ${HORUS_SCRIPT_HOME}/properties.sh
 
 KEY=${OWNER_PUBLIC_KEY}
  
